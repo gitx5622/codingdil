@@ -10,7 +10,9 @@ import GroupIcon from '@mui/icons-material/Group';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { BoxLoading } from 'react-loadingg';
 import DIL from "../assets/dil.png";
+import Link from 'next/link';
 import Image from 'next/image';
+
 
 const Photos = () => {
     const [username, setUsername] = useState("");
@@ -65,7 +67,10 @@ const Photos = () => {
                                     </ListItemButton>
                                 </ListItem>
                                 <div style={styles.logout}>
-                                    <h3 style={styles.logout.h3}><a href="/">Logout</a></h3>
+                                    <h3 style={styles.logout.h3}>
+                                        <Link href="/">
+                                            <a>Logout</a>
+                                        </Link></h3>
                                     <p style={styles.logout.p}>© Data Integrated Limited 2021</p>
                                 </div>
                             </List>
